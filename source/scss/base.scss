@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $inter-font;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+  background-color: $body-background;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text-blue {
+  color: $text-blue;
+}
+
+h2 {
+  font-family: $poppins-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+h3 {
+  font-family: $poppins-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+h4 {
+  font-family: $poppins-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.title-h3 {
+  margin: 0;
+}
+
+// loader
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: $text-blue transparent $text-blue transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

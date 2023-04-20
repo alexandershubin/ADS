@@ -1,0 +1,34 @@
+.header {
+  &__content {
+    margin-bottom: 44px;
+  }
+
+  &__logo-img {
+    width: 95px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    &__content {
+      margin-bottom: 60px;
+    }
+
+    &__logo {
+      padding-bottom: 28px;
+      display: block;
+    }
+
+    &__logo-img {
+      width: 140px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    &__content {
+      margin-bottom: 62px;
+    }
+  }
+}

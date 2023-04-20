@@ -1,0 +1,157 @@
+.global {
+  background-image: url("../img/background-mobile_block-global.png");
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  background-size: contain;
+
+  &__content {
+    padding: 60px 0 169px;
+  }
+
+  &__h3 {
+    font-family: $poppins-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  &__span {
+    display: inline-block;
+  }
+}
+
+.windows {
+  &__text {
+    padding: 18px 10px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.54) 0%, rgba(255, 255, 255, 0.3) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+
+    box-shadow: 0px 16px 30px -21px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  &__p {
+    font-family: $inter-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+    text-align: center;
+    color: #343240;
+    margin: 0;
+  }
+
+  &__empty {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    min-height: 100px;
+    left: 0;
+    right: 0;
+    background: #F5F5F5;
+    border: 1px solid #E2D7D7;
+    box-shadow: 0 11px 35px -19px rgba(18, 16, 28, 0.15);
+
+    &:before {
+      content: url("../img/arrow.png");
+      position: absolute;
+      right: 24px;
+      top: -48px;
+    }
+  }
+
+  &__quarto {
+    width: 32px;
+    height: 14px;
+    top: 5px;
+    background: #03A9F4;
+    position: absolute;
+    right: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .global {
+    background-image: url("../img/background-tablet_block-global.png");
+
+    &__content {
+      max-width: 545px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 0 80px;
+    }
+
+    &__h3 {
+      font-size: 40px;
+      line-height: 56px;
+      margin-bottom: 29px;
+    }
+  }
+
+  .windows {
+    max-width: 546px;
+    width: 100%;
+
+    &__text {
+      margin: 0 auto 59px;
+    }
+
+    &__empty {
+      position: relative;
+      max-width: 300px;
+      width: 100%;
+      min-height: 250px;
+      margin: 0 auto;
+
+      &:before {
+        right: 10px;
+        top: -50px
+      }
+    }
+
+    &__quarto {
+      right: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .global {
+    background-image: url("../img/background-desktop_block-global.png");
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1110px;
+      padding: 110px 0;
+    }
+
+    &__text {
+      max-width: 545px;
+      width: 100%;
+    }
+  }
+
+  .windows {
+    max-width: 500px;
+    margin-right: 20px;
+    margin-top: 9px;
+
+    &__text {
+      padding: 18px 25px;
+    }
+
+    &__empty {
+      margin: 0 78px;
+
+      &:before {
+        right: 4px;
+      }
+    }
+  }
+}

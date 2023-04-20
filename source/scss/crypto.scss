@@ -1,0 +1,113 @@
+.crypto {
+  background-image: url("../img/background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100%;
+
+  &__content {
+    padding: 20px 0;
+  }
+
+  &__h4 {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  &__h2 {
+    margin: 0 0 10px;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 28px;
+    color: #343240;
+    margin: 0 0 32px;
+  }
+
+  &__span {
+    display: inline-block;
+  }
+
+  &__btn {
+    font-family: $poppins-font;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    background: #03A9F4;
+    box-shadow: 0 11px 30px -13px rgba(18, 16, 28, 0.25);
+    border-radius: 4px;
+    width: 100%;
+    padding: 14px;
+
+    transition: ease-in 0.3s;
+
+    &:hover {
+      transition: ease-out 0.3s;
+      opacity: 0.7;
+    }
+  }
+
+  &__statistic {
+    position: relative;
+    padding-bottom: 167px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .crypto {
+    background-image: url("../img/background-tablet.png");
+    background-size: contain;
+
+    &__content {
+      padding: 29px 0;
+    }
+
+    &__description {
+      margin: 0 0 24px;
+    }
+
+    &__btn {
+      max-width: 285px;
+      width: 100%;
+    }
+
+    &__statistic {
+      padding-bottom: 89px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .crypto {
+    background-image: url("../img/background-desktop.png");
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+    }
+
+    &__text {
+      max-width: 750px;
+      padding-left: 75px;
+      width: 100%;
+    }
+
+    &__statistic {
+      padding-bottom: 78px;
+    }
+
+    &__image {
+      display: block;
+      margin-top: -7px;
+      margin-left: -1px;
+    }
+  }
+}
